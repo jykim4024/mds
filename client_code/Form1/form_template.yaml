@@ -7,6 +7,46 @@ components:
   properties: {}
   name: content_panel
   layout_properties: {slot: default}
+  components:
+  - name: card_1
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'NWATDS,QJONTR'}
+    components:
+    - name: label_1
+      properties: {text: Feedback Form, role: headline}
+      type: Label
+      layout_properties: {grid_position: 'YYBIJD,GIJTIU'}
+  - name: label_2
+    properties: {text: Name}
+    type: Label
+    layout_properties: {grid_position: 'CZAKYT,DAQSPM'}
+  - name: name_box
+    properties: {align: left, visible: true}
+    type: TextBox
+    layout_properties: {grid_position: 'TANBMI,VRDHNQ'}
+    event_bindings: {pressed_enter: name_box_pressed_enter}
+  - name: label_3
+    properties: {text: Email}
+    type: Label
+    layout_properties: {grid_position: 'WBCGCM,BEXFHI'}
+  - name: email_box
+    properties: {}
+    type: TextBox
+    layout_properties: {grid_position: 'UAEZJX,HQQAOA'}
+  - name: label_4
+    properties: {text: Feedback}
+    type: Label
+    layout_properties: {grid_position: 'BDPGGP,DROWAJ'}
+  - name: feedback_box
+    properties: {}
+    type: TextArea
+    layout_properties: {grid_position: 'EHNULG,UAWCQJ'}
+  - name: submit_btn
+    properties: {text: Submit}
+    type: Button
+    layout_properties: {grid_position: 'NLZFFV,GYLHDJ'}
+    event_bindings: {click: submit_btn_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links
